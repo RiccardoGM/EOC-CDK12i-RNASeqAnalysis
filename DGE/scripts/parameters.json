@@ -1,0 +1,38 @@
+{
+  "line_name": ["LINENAME"],
+  "counts_dir": "/path/to/EOC-CDK12i-RNASeqAnalysis/DGE/gene_counts",
+  "metadata_dir": "/path/to/EOC-CDK12i-RNASeqAnalysis/DGE/metadata",
+  "results_dir": "/path/to/EOC-CDK12i-RNASeqAnalysis/DGE/results",
+  "figures_dir": "/path/to/EOC-CDK12i-RNASeqAnalysis/DGE/figures",
+  "gtf_dir": "/path/to/EOC-CDK12i-RNASeqAnalysis/genome_annotation/gencode.v44.annotation.gtf",
+  "contrasts_file": "/path/to/EOC-CDK12i-RNASeqAnalysis/DGE/scripts/contrasts.json",
+  "gene_type": "lncRNA_ProteinCoding",
+  "n_replicates": 3,
+
+  "DGE": {
+    "design": ["baseline", "treatment"]
+  },
+
+  "gsea": {
+    "keyType": "ENSEMBL",
+    "nPermSimple": 1000,
+    "minGSSize": 100,
+    "maxGSSize": 600,
+    "pvalueCutoff": 0.05,
+    "padjTh": 0.05,
+    "pAdjustMethod": "BH",
+    "ont": "BP",
+    "seed": true,
+    "eps": 0,
+    "ranking_list": ["ranking#SlfcLogP"],
+    "exponent_list": [0],
+    "cutbypval_list": [false],
+    "selected_go_terms": [
+      "RNA splicing",
+      "mRNA processing",
+      "DNA repair",
+      "translation",
+      "ribosome biogenesis"
+    ]
+  }
+}

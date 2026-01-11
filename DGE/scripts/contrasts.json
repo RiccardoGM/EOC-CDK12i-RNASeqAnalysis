@@ -1,0 +1,6 @@
+{
+  "contrasts": [
+    ["baseline_and_treatment", "State1A", "State1U"],
+    ["baseline_and_treatment", "State2B", "State2U"]
+  ]
+}
