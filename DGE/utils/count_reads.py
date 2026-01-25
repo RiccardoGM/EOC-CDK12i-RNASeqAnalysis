@@ -10,8 +10,8 @@ idx = int(sys.argv[2])
 stranded = str(sys.argv[3])
 
 # --- Set the path to GTF annotation file --- #
-gencode_file = "gencode.v44.annotation.gtf.gz" # Set gencode_file name
-gtf_file = f"/path/to/your/{gencode_file}" # Set path to gencode_file
+gencode_file_name = "gencode.v44.annotation.gtf.gz" # Set custom gencode_file name
+gencode_file_path = f"/path/to/your/{gencode_file_name}" # Set path to gencode_file
 
 
 # --- Create list of BAM files found in the directory --- #
@@ -34,7 +34,7 @@ output_file = os.path.join(counts_data_dir, output_filename)
 cmd = (
     f"htseq-count -f bam -r pos -s {stranded} "
     f"-i gene_id -t exon "
-    f"{os.path.join(bam_dir, bam_file)} {gtf_file} "
+    f"{os.path.join(bam_dir, bam_file)} {gencode_file_path} "
     f"> {output_file}"
 )
 print("File:", output_file)
