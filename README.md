@@ -2,7 +2,7 @@
 
 **Overview**
 
-This repository provides scripts and configuration files that allow to run differential gene expression, gene set enrichment analysis (GSEA) of Gene Ontology (GO) Biological Process terms, and junction-based alternative splicing analyses from bulk RNA-sequencing data. The workflows are designed and tested for epithelial ovarian cancer (EOC) models treated with CDK12/13 inhibitors and include sample metadata templates, contrast definitions, and reference parameter files required to run the analyses.
+This repository provides scripts and configuration files that allow to run differential gene expression, gene set enrichment analysis (GSEA) of GO Biological Process terms, and junction-based alternative splicing analyses from bulk RNAseq data. The workflows are designed and tested for epithelial ovarian cancer (EOC) models treated with CDK12/13 inhibitors and include sample metadata templates, contrast definitions, and reference parameter files required to run the analyses.
 
 Raw sequencing data and processed analysis inputs are not included in the repository. Users are required to supply gene-level count matrices and rMATS output files, as well as a GENCODE comprehensive genome annotation (e.g. GRCh38.p14, version 44, CHR), downloaded separately and placed in the genome_annotation folder before running the analyses.
 
