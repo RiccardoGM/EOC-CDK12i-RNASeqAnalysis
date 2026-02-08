@@ -66,8 +66,8 @@ You can define *one design option* in parameters.json:
 2. Combined design:
   ["baseline", "treatment"] – a single factor is constructed by combining baseline and treatment values.  
   Example:  
-  baseline levels: State1, State2
-  treatment levels: U, A, B
+  baseline levels: State1, State2  
+  treatment levels: U, A, B  
   resulting combined levels: State1U, State1A, State1B, State2U, State2A, State2B 
 
 NB: only one of these options can be used as the single-factor design.
