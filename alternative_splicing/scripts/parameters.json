@@ -1,0 +1,16 @@
+{
+  "alternative_splicing": {
+    "only_junctions": true,
+    "FDR_threshold": 0.05,
+    "abs_delta_psi_threshold": 0.1,
+    "avg_reads_threshold": 5
+  },
+
+  "paths": {
+    "rmats_output_dir": "/path/to/EOC-CDK12i-RNASeqAnalysis/alternative_splicing/rmats_output",
+    "figures_dir": "/path/to/EOC-CDK12i-RNASeqAnalysis/alternative_splicing/figures",
+    "gene_summary_dir": "/path/to/EOC-CDK12i-RNASeqAnalysis/alternative_splicing/gene_summary",
+    "gtf_file": "/path/to/EOC-CDK12i-RNASeqAnalysis/genome_annotation/gencode.v44.annotation.gtf",
+    "gene_info_file": "/path/to/EOC-CDK12i-RNASeqAnalysis/genome_annotation/gene_info.csv"
+  }
+}
